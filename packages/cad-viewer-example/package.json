@@ -10,10 +10,10 @@
   },
   "scripts": {
     "analyze": "vite build --mode analyze",
-    "build": "vue-tsc && vite build",
+    "build": "node init && vue-tsc && vite build",
     "clean": "rimraf dist lib tsconfig.tsbuildinfo",
-    "dev": "vite",
-    "dev:local-data-model": "vite --mode local-data-model",
+    "dev": "node init && vite",
+    "dev:local-data-model": "node init && vite --mode local-data-model",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:ui": "playwright test --ui",

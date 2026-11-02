@@ -11,7 +11,7 @@
     "url": "https://github.com/mlightcad/cad-viewer.git"
   },
   "scripts": {
-    "build": "tsc && vite build --config vite.runner.config.ts && node scripts/copy-runner-assets.mjs",
+    "build": "node init && tsc && vite build --config vite.runner.config.ts && node scripts/copy-runner-assets.mjs",
     "install-browser": "playwright install chromium",
     "clean": "rimraf dist dist-runner tsconfig.tsbuildinfo",
     "export": "node ./dist/cli.js",
