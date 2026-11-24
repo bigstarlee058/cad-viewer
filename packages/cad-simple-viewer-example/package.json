@@ -8,9 +8,9 @@
     "url": "https://github.com/mlightcad/cad-viewer.git"
   },
   "scripts": {
-    "build": "node init && tsc && vite build",
+    "build": "tsc && vite build",
     "clean": "rimraf dist lib tsconfig.tsbuildinfo",
-    "dev": "node init && vite",
+    "dev": "vite",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix --quiet src/",
     "preview": "vite preview"

@@ -35,9 +35,9 @@
   ],
   "scripts": {
     "analyze": "vite build --mode analyze",
-    "dev": "node init && vite",
+    "dev": "vite",
     "clean": "rimraf dist lib tsconfig.tsbuildinfo",
-    "build": "node init && vue-tsc && vite build",
+    "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix --quiet src/"

@@ -38,7 +38,7 @@
   },
   "scripts": {
     "clean": "rimraf dist lib tsconfig.tsbuildinfo",
-    "build": "node init && tsc && vite build",
+    "build": "tsc && vite build",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix --quiet src/"
   },

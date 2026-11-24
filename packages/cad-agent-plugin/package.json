@@ -42,8 +42,8 @@
   },
   "scripts": {
     "clean": "rimraf dist lib tsconfig.tsbuildinfo",
-    "build:types": "node init && node scripts/copy-typings.mjs",
-    "build": "node init && pnpm build:types && vite build",
+    "build:types": "node scripts/copy-typings.mjs",
+    "build": "pnpm build:types && vite build",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix --quiet src/"
   },
